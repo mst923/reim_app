@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import TabScreen from './src/Navigations/';
 import * as Notifications from 'expo-notifications';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 const App = () => {
@@ -8,7 +9,9 @@ const App = () => {
     requestPermissionsAsync();
   })
   return (
-<TabScreen />
+    <GestureHandlerRootView  screenOptions={{flex : 1}}>
+      <TabScreen />
+    </GestureHandlerRootView>
   );
 }
 
