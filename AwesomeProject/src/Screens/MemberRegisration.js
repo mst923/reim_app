@@ -1,11 +1,8 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import { StyleSheet, View, Text, TextInput, ScrollView, SafeAreaView} from 'react-native';
-// import { useRoute } from '@react-navigation/routers';
 import { useNavigation,useRoute, useFocusEffect } from '@react-navigation/core';
 import { FlatList } from 'react-native-gesture-handler';
 import * as SQLite from 'expo-sqlite';
-// import { SwipeListView } from 'react-native-swipe-list-view';
-// import * as FileSystem from 'expo-file-system';
 import { ListItem, Button } from '@rneui/themed';
 
 const MemberRegisration = () => {
@@ -124,12 +121,6 @@ const MemberRegisration = () => {
         )
       },[state])
     )
-
-
-    //useEffectを用いると画面遷移した時に表示できるようになる。
-    // useEffect(() => {
-
-    //   },[state]);
     return (
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>

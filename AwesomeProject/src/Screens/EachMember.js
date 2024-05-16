@@ -10,26 +10,6 @@ const EachMember = () => {
   const route = useRoute();
   const {id, player, project, history} = route.params;
   const [expanded, setExpanded] = useState(true);
-  // const [history, setHistory] =useState([]);
-  // useEffect(() => {
-  //     const db = SQLite.openDatabase("travels.db");
-  //     db.transaction((tx) => {
-  //         tx.executeSql(
-  //             "SELECT * FROM "+project+"History WHERE player = (?);",
-  //             [player],
-  //             (_, resultSet) => {
-  //                 setHistory(resultSet.rows._array);
-  //             },
-  //             () => {
-  //                 console.log(player + 'のHistoryの取得に失敗');
-  //                 return true;
-  //             }
-  //         )
-  //     },
-  //     () => { console.log("失敗しました");},
-  //     () => { console.log("成功しました。");}
-  //     );
-  // }, []);
   const filterDataArray = () => {
     return history.filter(item => item.player === player)
   }

@@ -81,11 +81,6 @@ const EachReimbursement = () => {
           setCheckedNames([...checkedNames.slice(0, checkedInd), ...checkedNames.slice(checkedInd + 1)]);
         }
       };
-
-    // const total = newAmmount
-    // const player = history.map((obj) => obj.player);
-    // const involves = history.map((obj) => obj.involves);
-
     return (
         <SafeAreaView style={styles.container}>
         <Text></Text>
